@@ -1,0 +1,15 @@
+.form-control{
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+.btn-search{
+    color: white;
+    background-color: #483e68;
+    border-color: #362d50;
+    transition: all .3s;
+}
+.btn-search:hover{
+    background-color: #3c3457;
+    color: #fff;
+    border: 1px solid rgb(43, 36, 63);
+}
