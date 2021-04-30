@@ -22,7 +22,7 @@ const AddProduct = () => {
             image: imageURL
         }
         console.log(eventData);
-        fetch("http://localhost:5000/addProduct", {
+        fetch("https://peaceful-falls-90035.herokuapp.com/addProduct", {
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json'

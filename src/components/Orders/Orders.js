@@ -12,7 +12,7 @@ const Orders = () => {
     //Orders 
     useEffect(() => {
         setLoading(true);
-        fetch('http://localhost:5000/orders?email='+loggedInUser.email)
+        fetch('https://peaceful-falls-90035.herokuapp.com/orders?email='+loggedInUser.email)
         .then(res => res.json())
         .then(data => {
             setOrders(data);

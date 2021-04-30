@@ -20,7 +20,7 @@ const EditProduct = () => {
         //     price: data.price
         // }
         // console.log(eventData);
-        fetch(`http://localhost:5000/update/${editId}`, {
+        fetch(`https://peaceful-falls-90035.herokuapp.com/update/${editId}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type' : 'application/json'

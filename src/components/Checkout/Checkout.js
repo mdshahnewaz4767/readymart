@@ -13,7 +13,7 @@ const Checkout = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     console.log(loggedInUser);
     useEffect(() => {
-        fetch("http://localhost:5000/product/"+ productId)
+        fetch("https://peaceful-falls-90035.herokuapp.com/product/"+ productId)
         .then(res => res.json())
         .then(data => {
             setSingleProduct(data);
@@ -25,7 +25,7 @@ const Checkout = () => {
     const handleOrder = () => {
         const orderDetails = {...loggedInUser, product: singleProduct, orderTime: new Date()};
 
-        fetch("http://localhost:5000/addOrder", {
+        fetch("https://peaceful-falls-90035.herokuapp.com/addOrder", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
